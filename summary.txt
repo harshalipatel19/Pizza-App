@@ -1,0 +1,69 @@
+1) create directory structure
+    1) create package.json
+    * install yarn using npm install --global yarn
+    * yarn init for create package .json (same as we use npm init)
+    * package.json file created
+    * yarn init -y for skip question when create package.json set default config and create package.json
+    2) folder structure
+    * create one public folder to keep public asset like css, js or image
+        - add css, js and image folder inside public 
+            public > css , public > js, public> image
+    * create app folder for keep logic of project
+       - add http iside app request related file like controller middlware in http 
+            app > http  
+                - create controllet inside http to keep all controller (logic)
+                   app > http > controller
+                - create middlewares iside http to keep middlware
+                   app > http > middlwares
+       - add model folde inside app to keep all model 
+            app > model
+       - add config folder to keep all configaration of project 
+            app > config
+    * create resources folder to keep views , template
+        - add folder to keep sass file and js file uncompile file which are after complite move to public
+            resources > js
+        - add scss folder in resources to keep sass file css file
+           resources > scss
+        - create views folder to keep html code , template (frontside)
+           resources > views
+    * create routes folder to keep routes (url handle) 
+        - add web.js file to keep web related route 
+        - add api.js file for api related routes  
+2) create NPM project and install all dependencies
+    * yarn add express ejs express-ejs-layouts (install this then add node_module folder and yarn.lock file)
+    * yarn add nodemon -D for install nodemon in dev dependencies
+    - dependencies
+        -express
+        -ejs express-ejs-layouts
+    - dev dependencies
+        - nodemon
+3) create express server -create server.js file
+    - create server.js file in root folder. this is main file from which code start main file for server
+    - add express, set port from env file 
+    - create script in package.js serve for server and dev for devlopment
+    - when use npm that time use this command to start server npm run (script name)
+    - in yarn use this command yarn (script name)
+    - ejs (template engine) use to embed varibles from server
+4) git setup and first commit
+    - use git --version to check git version
+    - git config --global user.name "kathiriya harshali" set username
+    - git config --global user.email "harshalikathiriya19@gmail.com"  set email
+    - git config user.email and gi config user.name for check mail and user name
+    - git init intialize our project on git in master branch
+    - create .gitignore file to add node_modules,env etc file
+    - use git status to check status of our files
+    - use git add . for add all files and git add (filename) for add choosen file in repo staged change
+    - use git commit -m "messgae" for commit changes
+5) install laravel mix
+    - setup js and scss
+6) install talwind css
+7) create home page using html and css
+    - include talwind css
+8) create cart page
+    - order summary section
+    - empty cart section
+9) create order controller and link it in server.js
+10) create order view with table for customer and admin
+11) create order single page with status
+12) create login page with route
+ 
