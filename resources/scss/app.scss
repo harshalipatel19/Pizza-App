@@ -1,0 +1,47 @@
+@import './variables';
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-font-smoothings: antialiased;
+    color: $dark;
+    //height: 4000px;
+}
+nav li:last-child a {
+    &:hover {                      
+        background: $primary-hover
+    }   
+}
+nav li a {
+    transition: $smooth;    //use transition same in whole site
+    &:hover {                       //use scss hover using &:
+        color: $primary;
+    }
+}
+section.hero {
+    background: $secondary;
+}
+.size {
+    background: $secondary;
+}
+.add-to-cart {
+    border: 2px solid $primary;
+    color: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary;
+        border-color: $pure;
+        color: $pure;
+    }
+}
+.btn-primary{
+    background: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+input{
+    padding: 10px;
+}
+

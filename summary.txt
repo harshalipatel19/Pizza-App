@@ -55,9 +55,25 @@
     - use git add . for add all files and git add (filename) for add choosen file in repo staged change
     - use git commit -m "messgae" for commit changes
 5) install laravel mix
+    - use for mnage morder js and scss we can also use web pack this internally use webpack
+    - we need to do more config. in webpack but in laravel mix this is less
+    - npm install laravel-mix --save-dev / -D or yarn add laravel-mix -D for install laravel mix
     - setup js and scss
+    - after complition of laravel-mix copy webpack.mix.js file on root and set this configaration
+    - mix.js('resources/js/app.js','public/js/app.js').sass('resources/scss/app.scss','public/css/app.css') 
+    - using this compile js and css file from resource folder to public folder
+    - add some scripts in package.json  (for devlopment and production watch use for automatic compilationS)
+    - yarn add cross-env --save-dev for install cross env
+    - create file in resource folder run yarn run watch command and then it compile in public folder css and js file
 6) install talwind css
+    - yarn add talwindcss or npm install talwindcss  for install talwindcss|
+    - here use cdn link
+    - 
 7) create home page using html and css
+    - create layout.ejs for store nav and footer of site
+    - and in main files only need to add main section
+    - header and footer which contain are same in all pages are set in layouts
+    - set route in server.js page after setting template engine
     - include talwind css
 8) create cart page
     - order summary section
@@ -66,4 +82,8 @@
 10) create order view with table for customer and admin
 11) create order single page with status
 12) create login page with route
- 
+
+
+
+===> npm start for start server
+===> npm run watch for start laravel
